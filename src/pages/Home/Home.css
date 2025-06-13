@@ -19,5 +19,6 @@
   .bouncing-ball {
     width: 100px;
     height: 100px;
+    filter: blur(50px);
   }
 }
