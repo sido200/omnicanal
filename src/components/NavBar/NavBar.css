@@ -1,0 +1,94 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 90px;
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.logo {
+  color: rgba(123, 0, 255, 1);
+  font-size: 24px;
+  font-weight: 700;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.NavBar button {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.nav-links a {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+.nav-links .active {
+  color: rgba(123, 0, 255, 1);
+  font-weight: 600;
+}
+.respo-button,
+.close,
+.Menu {
+  display: none;
+}
+@media screen and (max-width: 1240px) {
+}
+@media screen and (max-width: 1070px) {
+  .NavBar {
+    padding: 25px 40px;
+  }
+  .NavBar > button {
+    display: none;
+  }
+  .nav-links {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    clip-path: inset(0 0 0 100%);
+    transition: 1s ease-in-out;
+  }
+  .open_nav {
+    clip-path: inset(0 0 0 0) !important;
+  }
+  body:has(.open_nav) {
+    overflow: hidden;
+  }
+  .respo-button {
+    display: block;
+  }
+  .close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    height: 24px;
+    width: 24px;
+  }
+  .Menu {
+    display: block;
+    height: 24px;
+    width: 24px;
+  }
+}
+@media screen and (max-width: 750px) {
+}
+@media screen and (max-width: 468px) {
+}

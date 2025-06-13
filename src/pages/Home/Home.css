@@ -1,0 +1,23 @@
+.Home {
+  position: relative;
+  overflow: hidden;
+}
+
+.bouncing-ball {
+  position: fixed;
+  top: 50%; /* Centré verticalement */
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-color: red; /* Couleur initiale */
+  border-radius: 50%;
+  transition: background-color 1s ease;
+  filter: blur(100px);
+  z-index: 0; /* Derrière le contenu */
+}
+@media (max-width: 768px) {
+  .bouncing-ball {
+    width: 100px;
+    height: 100px;
+  }
+}
