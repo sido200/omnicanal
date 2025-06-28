@@ -109,25 +109,24 @@ export default function Footer() {
             </Link>
           </ul>
           <ul>
-            <li className="title-liste">Useful links</li>
-            <li>Give feed back</li>
-            <li>Support</li>
+            <li className="title-liste">Contact</li>
+            <li>+213 23 534 837</li>
+            <li>Clientèle@omnicanal-dz.com</li>
+           <a href="https://maps.app.goo.gl/Zhd2uYinLyzjLzFf7" target="_blank"> <li>Maps</li></a>
           </ul>
         </div>
       </div>
       <div className="bottom-footer">
         <div className="social">
-          <a href="https://instagram.com" target="_blank">
+          <a href="https://www.instagram.com/omnicanal_agency?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== " target="_blank">
             <FiInstagram color="white" size={32} />
           </a>
-          <a href="https://linkedin.com" target="_blank">
+          <a href="https://www.linkedin.com/company/omnicanal-creative-agency/" target="_blank">
             <FiLinkedin color="white" size={32} />
           </a>
-          <a href="https://facebook.com" target="_blank">
-            <FiFacebook color="white" size={32} />
-          </a>
+        
         </div>
-        <p>© 2024 dr Omnicall all right reserved</p>
+        <p>© 2025 Omnicall all right reserved</p>
       </div>
     </footer>
   );

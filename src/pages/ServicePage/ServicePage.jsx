@@ -4,12 +4,18 @@ import "./ServicePage.css"; // Adjust the path as necessary
 import Modal from "@mui/material/Modal";
 import { Box } from "@mui/material";
 import { IoClose } from "react-icons/io5";
-import functionImage from "../../assets/function.jpg";
+import omni2 from "../../assets/omni.png";
+import omni1 from "../../assets/omni1.png";
+import omni3 from "../../assets/omni2.png";
+import omni4 from "../../assets/omni3.png";
+import omni5 from "../../assets/omni4.png";
+import omni6 from "../../assets/omni5.png";
+import omni7 from "../../assets/omni6.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { FreeMode, Autoplay } from "swiper/modules";
+import { FreeMode } from "swiper/modules";
 import { FaLongArrowAltRight } from "react-icons/fa";
 const style = {
   position: "absolute",
@@ -30,12 +36,13 @@ const style = {
 
 const ServicePage = () => {
   const [filter, setFilter] = useState("all");
+  const [service, setService] = useState("");
 
   const handleFilterClick = (category) => {
     setFilter(category);
   };
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
+  const handleOpen = (id) => {setOpen(true), setService(id)};
   const handleClose = () => setOpen(false);
   const categories = [
     "All",
@@ -48,37 +55,37 @@ const serviceData=[
   {
     title: "Consulting Marketing",
     description: "Crafting responsive and dynamic websites tailored to your business needs.",
-    image: functionImage,
+    image: omni1  ,
   },
   {
     title: "Digital Marketing",
     description: "Boost your online presence with our comprehensive digital marketing strategies.",
-    image: functionImage,
+    image: omni2,
   },
   {
     title: "Creation de packaging",
     description: "Designing unique packaging that stands out on the shelves.",
-    image: functionImage,
+    image: omni3,
   },
   {
     title: "Branding",
     description: "Building a strong brand identity that resonates with your audience.",
-    image: functionImage,
+    image: omni4,
   },
   {
     title: "Organisation d'événements",
     description: "Planning and executing memorable events that leave a lasting impression.",
-    image: functionImage,
+    image: omni5,
   },
   {
     title: "Creation audiovisuelle",
     description: "Producing high-quality audiovisual content to engage your audience.",
-    image: functionImage,
+    image: omni6,
   },
   {
     title: "Impression sur tout support",
     description: "Offering high-quality printing services on various materials.",
-    image: functionImage,
+    image: omni7,
   },
 ]
   return (
@@ -114,34 +121,24 @@ const serviceData=[
             modules={[FreeMode]}
             freeMode={true}
           >
-            {}
-            <SwiperSlide className="swiper-slide-custom">
-              <img src={functionImage} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide-custom">
-              <img src={functionImage} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide-custom">
-              <img src={functionImage} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide-custom">
-              <img src={functionImage} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide-custom">
-              <img src={functionImage} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide-custom">
-              <img src={functionImage} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide-custom">
-              <img src={functionImage} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide-custom">
-              <img src={functionImage} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide-custom">
-              <img src={functionImage} alt="" />
-            </SwiperSlide>
+            {serviceData[service] && (
+              <>
+                <SwiperSlide className="swiper-slide-custom">
+                  <img src={serviceData[service].image} alt="" />
+                </SwiperSlide>
+                <SwiperSlide className="swiper-slide-custom">
+                  <img src={serviceData[service].image} alt="" />
+                </SwiperSlide>
+                <SwiperSlide className="swiper-slide-custom">
+                  <img src={serviceData[service].image} alt="" />
+                </SwiperSlide>
+                <SwiperSlide className="swiper-slide-custom">
+                  <img src={serviceData[service].image} alt="" />
+                </SwiperSlide>
+              </>
+            )}
+         
+            
           </Swiper>
      <div className="button-modal">
            <button>
@@ -169,7 +166,7 @@ const serviceData=[
         {serviceData.map((service, index) => (
           <ServiceCard
             key={index}
-            click={handleOpen}
+            click={()=>handleOpen(index)}
             info={{
               title: service.title,
               description: service.description,
