@@ -111,7 +111,13 @@ const serviceData=[
             habitant morbi tristique senectus
           </p>
           <Swiper
-            slidesPerView={5}
+                slidesPerView={1}
+            breakpoints={{
+            
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              1224: { slidesPerView: 5 },
+            }}
             spaceBetween={10}
             speed={2500}
             pagination={{
