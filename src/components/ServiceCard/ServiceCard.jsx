@@ -1,12 +1,12 @@
 import React from "react";
 import "./ServiceCard.css"; // Adjust the path as necessary
-import serviceImage from "../../assets/image.jpg"; // Adjust the path as necessary
-const ServiceCard = () => {
+// Adjust the path as necessary
+const ServiceCard = ({click,info}) => {
   return (
-    <div className="service_card">
-      <img src={serviceImage} alt="service" />
-      <h3>Service Title</h3>
-      <p>Description of the service offered,</p>
+    <div onClick={click} className="service_card">
+      <img src={info?.image} alt="service" />
+      <h3>{info.title}</h3>
+      <p>{info.descriptions}</p>
     </div>
   );
 };

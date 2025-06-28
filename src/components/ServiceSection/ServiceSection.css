@@ -40,12 +40,14 @@
 .right_service {
   width: 50%;
   height: 100%;
+  position: relative;
 }
 .left_service {
   padding: 40px;
   background-color: rgba(247, 246, 249, 1);
   border-radius: 32px;
   position: relative;
+    width: 50%;
 }
 .left_service img {
   width: 100%;
@@ -106,13 +108,61 @@
   height: 40px;
   width: 40px;
 }
+.service_section .swiper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 3;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.service_section .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.service_section .swiper-slide img {
+  display: block;
+
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 3;
+}
+
+
+
 @media (max-width: 1200px) {
   .service_section {
     padding: 3% 30px;
   }
+     .service_content {
+    flex-direction: column;
+    height: auto;
+  }
+    .service_content > div {
+    width: 100%;
+  }
+       .service_section .swiper {
+    max-width: 640px;
+    height: auto;
+  }
 }
 
 @media (max-width: 992px) {
+     .service_section .swiper {
+    max-width: 650px;
+    height: auto;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -120,12 +170,15 @@
     flex-direction: column;
     height: auto;
   }
-  .service_content > div {
-    width: 100%;
-  }
+
+
 }
 
 @media (max-width: 576px) {
+    .service_section .swiper {
+    max-width: 350px;
+    height: auto;
+  }
   .service_section h2 {
     font-size: 2rem;
     width: 100%;

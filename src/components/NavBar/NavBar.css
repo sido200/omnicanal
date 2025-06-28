@@ -26,7 +26,14 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 24px;
+
 }
+.NavBar >button {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
 .nav-links a {
   font-size: 24px;
   font-weight: 400;
@@ -39,7 +46,7 @@
 .respo-button,
 .close,
 .Menu {
-  display: none;
+  display: none ;
 }
 @media screen and (max-width: 1240px) {
 }
@@ -63,7 +70,7 @@
     align-items: center;
     justify-content: center;
     clip-path: inset(0 0 0 100%);
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   .open_nav {
     clip-path: inset(0 0 0 0) !important;

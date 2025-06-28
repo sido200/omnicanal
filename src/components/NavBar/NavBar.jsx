@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useState } from "react";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function NavBar() {
   const [openNav, setOpenNav] = useState(false);
@@ -25,7 +26,7 @@ export default function NavBar() {
         <button className="respo-button">Let’s talk</button>
       </ul>
       <IoMenu className="Menu" onClick={() => setOpenNav(true)} />
-      <button>Let’s talk</button>
+      <button>Let’s talk <FaLongArrowAltRight /></button>
     </nav>
   );
 }
