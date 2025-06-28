@@ -12,3 +12,8 @@
   list-style: none;
   text-decoration: none;
 }
+.typewriter h1 {
+  overflow: hidden;
+
+  white-space: nowrap;
+}

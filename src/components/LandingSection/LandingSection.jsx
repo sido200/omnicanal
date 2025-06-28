@@ -1,21 +1,21 @@
-import React from "react";
 import CardHome from "../CardHome/CardHome";
 import "./LandingSection.css";
 import image from "../../assets/image.jpg";
+import "animate.css/animate.min.css";
 import { FiLayers, FiUsers, FiArchive } from "react-icons/fi";
 const LandingSection = () => {
   return (
     <section className="LandingSection">
-      <h2>Grow your buisness faster</h2>
-      <p>
-        Attract more user and grow your buiness fast with us. contact us today
+      <h2 className="animate__animated animate__zoomIn animate__delay-0.2s">Grow your business faster</h2>
+      <p className="animate__animated animate__zoomIn animate__delay-1s">
+        Attract more users and grow your business fast with us. Contact us today
         to get more details
       </p>
-      <div className="button">
+      <div className="button animate__animated animate__fadeInUp animate__delay-1s">
         <button className="primary-button">Start a project</button>
         <button className="secondary-button">Check our work</button>
       </div>
-      <div className="home_section_card">
+      <div className="home_section_card animate__animated animate__fadeInUp animate__delay-2s">
         <CardHome bgI={image} />
         <CardHome
           icon={<FiLayers />}
@@ -40,7 +40,7 @@ const LandingSection = () => {
         />
         <CardHome bg={"black"} text1={"Latest project"} color={"white"} />
       </div>
-      <div className="open">
+      <div className="open animate__animated animate__fadeInUp animate__delay-3s">
         <span>
           <span></span>
         </span>

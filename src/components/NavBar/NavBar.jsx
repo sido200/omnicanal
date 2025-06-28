@@ -14,8 +14,8 @@ export default function NavBar() {
         <NavLink to="/" activeClassName="active">
           <li>Home</li>
         </NavLink>
-        <NavLink to="/about" activeClassName="active">
-          <li>About us</li>
+        <NavLink to="/contact" activeClassName="active">
+          <li>Contact us</li>
         </NavLink>
         <NavLink to="/service" activeClassName="active">
           <li>Services</li>
