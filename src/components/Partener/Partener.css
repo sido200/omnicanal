@@ -8,6 +8,7 @@
   padding: 40px 0;
   position: relative;
   z-index: 3;
+  margin-top: 10px;
 }
 .Partener .title-board h2 {
   color: rgba(126, 126, 126, 1);

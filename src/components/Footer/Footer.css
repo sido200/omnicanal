@@ -7,6 +7,7 @@
   padding: 100px 250px 70px 250px;
   justify-content: space-between;
   position: relative;
+  margin-top: 20px;
 }
 .top-footer,
 .bottom-footer {

@@ -34,11 +34,11 @@ export default function Home() {
         const progress = animation.progress();
         if (progress <= 0.1) ballRef.current.style.backgroundColor = "rgba(123, 0, 255, 1)";
         else if (progress <= 0.2)
-          ballRef.current.style.backgroundColor = "yellow";
+          ballRef.current.style.backgroundColor = "rgba(123, 0, 255, 1)";
         else if (progress <= 0.3)
           ballRef.current.style.backgroundColor = "rgba(123, 0, 255, 1)";
         else if (progress <= 0.5)
-          ballRef.current.style.backgroundColor = "yellow";
+          ballRef.current.style.backgroundColor = "rgba(123, 0, 255, 1)";
         else ballRef.current.style.backgroundColor = "rgba(123, 0, 255, 1)";
       },
     });

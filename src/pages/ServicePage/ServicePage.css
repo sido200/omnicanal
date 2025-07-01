@@ -2,7 +2,7 @@
   padding: 70px 100px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   margin-bottom: 50px;
 }
 .service_page .swiper {
