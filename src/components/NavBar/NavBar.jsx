@@ -14,19 +14,23 @@ export default function NavBar() {
         <NavLink to="/" activeClassName="active">
           <li>Home</li>
         </NavLink>
-        <NavLink to="/contact" activeClassName="active">
-          <li>Contact us</li>
-        </NavLink>
-        <NavLink to="/service" activeClassName="active">
-          <li>Services</li>
-        </NavLink>
         <NavLink to="/portfolio" activeClassName="active">
           <li>Portfolio</li>
         </NavLink>
+
+        <NavLink to="/service" activeClassName="active">
+          <li>Services</li>
+        </NavLink>
+        <NavLink to="/contact" activeClassName="active">
+          <li>Contact us</li>
+        </NavLink>
+
         <button className="respo-button">Let’s talk</button>
       </ul>
       <IoMenu className="Menu" onClick={() => setOpenNav(true)} />
-      <button>Let’s talk <FaLongArrowAltRight /></button>
+      <button>
+        Let’s talk <FaLongArrowAltRight />
+      </button>
     </nav>
   );
 }
