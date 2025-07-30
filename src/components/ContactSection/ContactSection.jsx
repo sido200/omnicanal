@@ -25,8 +25,10 @@ const ContactSection = () => {
         <Question />
 
         <div className="right">
-          <h2>{"title"}</h2>
-          <p>{"description"}</p>
+         <div className="right_text">
+           <h2>{"Still have questions ?"}</h2>
+          <p>{"Can’t find the answer to you’re looking for? Please contact with our costumer service."}</p>
+         </div>
           <ContactForm />
         </div>
       </div>

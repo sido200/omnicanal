@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./CardHome.css";
 
-const CardHome = ({ icon, text1 = "", text2, color, bg, bgI }) => {
+const CardHome = ({ icon, text1 = "", text2, color, bg, bgI,icon2 }) => {
   const [count, setCount] = useState(0);
 
   // Vérifie si text1 est un nombre avec ou sans symbole
@@ -62,7 +62,7 @@ const CardHome = ({ icon, text1 = "", text2, color, bg, bgI }) => {
 
       <div className="card_content">
         {contentToDisplay && (
-          <h3 style={{ color: color }}>{contentToDisplay}</h3>
+          <h3 style={{ color: color, alignItems:"center",display:"flex",gap:"5px" }}> {icon2} {contentToDisplay}</h3>
         )}
         {text2 && <p style={{ color: color }}>{text2}</p>}
       </div>

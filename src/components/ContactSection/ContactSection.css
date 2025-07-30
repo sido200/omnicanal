@@ -157,7 +157,13 @@
   font-weight: 500;
   border-radius: 4px;
 }
+.right_text{
+  display: flex;
+align-items: flex-start;
+flex-direction: column;
+gap: 10px;
 
+}
 .input-container input {
   width: 100%;
   border: none;

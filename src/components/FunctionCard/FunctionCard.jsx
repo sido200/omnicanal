@@ -1,11 +1,11 @@
 import React from "react";
 import "./FunctionCard.css";
-import functionImage from "../../assets/function.jpg"; // Adjust the path as necessary
-const FunctionCard = () => {
+// Adjust the path as necessary
+const FunctionCard = ({img,text}) => {
   return (
     <div className="function_card">
-      <img src={functionImage} alt="function" />
-      <p>Branding - new samsung graphic charter</p>
+      <img src={img} alt="function" />
+      <p>{text}</p>
     </div>
   );
 };

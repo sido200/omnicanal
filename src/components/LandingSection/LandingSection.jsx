@@ -1,44 +1,53 @@
 import CardHome from "../CardHome/CardHome";
 import "./LandingSection.css";
-import image from "../../assets/image.jpg";
+import image from "../../assets/01.webp";
+import image2 from "../../assets/2.jpg";
+import image3 from "../../assets/3.jpg";
+import image4 from "../../assets/4.jpg";
+import image5 from "../../assets/5.jpg";
 import "animate.css/animate.min.css";
 import { FiLayers, FiUsers, FiArchive } from "react-icons/fi";
+import { FaInfinity } from "react-icons/fa6";
+import { MdOutlineFactCheck } from "react-icons/md";
 const LandingSection = () => {
   return (
     <section className="LandingSection">
-      <h2 className="animate__animated animate__zoomIn animate__delay-0.2s">Grow your business faster</h2>
+      <h2 className="animate__animated animate__zoomIn animate__delay-0.2s">Expand your brand</h2>
       <p className="animate__animated animate__zoomIn animate__delay-1s">
-        Attract more users and grow your business fast with us. Contact us today
-        to get more details
+      Donnez vie à votre marque et laisser là grandir comme jamais auparavant avec nos conseil d'expert. 
+
+Avec Omnicanal, devenez original, partou
       </p>
       <div className="button animate__animated animate__fadeInUp animate__delay-1s">
-        <button className="primary-button">Start a project</button>
-        <button className="secondary-button">Check our work</button>
+        <button className="primary-button">Passer au 360</button>
+        <button className="secondary-button">Nos travaux</button>
       </div>
       <div className="home_section_card animate__animated animate__fadeInUp animate__delay-2s">
         <CardHome bgI={image} />
         <CardHome
+        bgI={image2}
           icon={<FiLayers />}
-          text1={"99%"}
-          text2={"Attract more user and grow"}
+          text1={"20+"}
+          text2={"d'expérience dans le domaine pharmaceutique"}
           bg={"black"}
           color={"white"}
         />
         <CardHome
           icon={<FiUsers />}
-          text1={"213+"}
-          text2={"Attract more user and grow"}
-          bg={"rgba(213, 205, 255, 1)"}
-          color={"rgba(123, 0, 255, 1)"}
+          text1={"360°"}
+          text2={"Une polyvalence qui vous garantie un visibilité omnicanal"}
+          bgI={image3}
+          color={"white"}
         />
         <CardHome
           icon={<FiArchive />}
-          text1={"4+"}
-          text2={"Years of experience in the field"}
-          bg={"rgba(255, 233, 205, 1)"}
-          color={"black"}
+          icon2={<FaInfinity />}
+          text1={"+"}
+          text2={"Une créativité sans limite pour tous vos projets"}
+          bgI={image4}
+          color={"white"}
         />
-        <CardHome bg={"black"} text1={"Latest project"} color={"white"} />
+        <CardHome bgI={image5}   icon={<MdOutlineFactCheck  />} bg={"black"} text1={"3.0"} text2={"Faites vous remarquer sur les médias digitaux avec des stratégies faites sur mesure"} color={"white"} />
       </div>
       <div className="open animate__animated animate__fadeInUp animate__delay-3s">
         <span>

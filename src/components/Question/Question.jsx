@@ -11,30 +11,27 @@ const Question = () => {
   };
   const qst = [
     {
-      qst: "qst1",
-      reponse: "rep1",
+      qst: "Faites-vous du marketing B2B?",
+      reponse: "Nos services s'adaptent à presque tous les domaines et secteurs. Petite, Moyenne ou Grand entreprise nous vous proposerons une stratégie sur mesure pour vos objectifs et votre cible",
     },
     {
-      qst: "qst2",
-      reponse: "rep2",
+      qst: "Maitrisez vous le domaine Pharma?",
+      reponse: "Notre talentueuse équipe dispose de plus 20 ans d'expérience dans le domaine avec une excellente maitrise des besoin graphique du domaine",
     },
     {
-      qst: "qst3",
-      reponse: "rep3",
+      qst: "Faites vous de l'impression Offset?",
+      reponse: "Non Malheureusement, notre atelier est disponible pour tous vos besoins en impression numérique",
     },
     {
-      qst: "qst4",
-      reponse: "rep5",
+      qst: "Faites vous de la 3D?",
+      reponse: "Oui effectivement, que ce soit la conception de maquettes 3D à la création d'animations, vous n'avez qu'à demander",
     },
-    {
-      qst: "qst5",
-      reponse: "qst5",
-    },
+   
   ];
   return (
     <div className="left">
-      <h1>{"qst-title"}</h1>
-      <p>{"qst-desc"}</p>
+      <h1>{"Frequently asked questions"}</h1>
+      <p>{"Question you might ask about our products and services"}</p>
       <div className="question-content">
         {qst.map((item, index) => (
           <div className="question" key={index}>

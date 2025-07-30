@@ -1,12 +1,11 @@
 import "./PortfolioCard.css";
-import serviceImage from "../../assets/image.jpg";
-export default function PortfolioCard({ click }) {
+export default function PortfolioCard({ click ,image,title, description}) {
   return (
 
       <div onClick={click} className="Portfolio_card">
-        <img src={serviceImage} alt="service" />
-        <h3>Portfolio Title</h3>
-        <p>Description of the Portfolio </p>
+        <img src={image} alt="service" />
+        <h3>{title}</h3>
+        <p>{description}</p>
       </div>
  
   );

@@ -110,8 +110,8 @@ export default function Footer() {
           </ul>
           <ul>
             <li className="title-liste">Contact</li>
-            <li>+213 23 534 837</li>
-            <li>Clientèle@omnicanal-dz.com</li>
+            <li>+213 28 17 67 96</li>
+            <li>Info@omnicanal-dz.com</li>
            <a href="https://maps.app.goo.gl/Zhd2uYinLyzjLzFf7" target="_blank"> <li>Maps</li></a>
           </ul>
         </div>

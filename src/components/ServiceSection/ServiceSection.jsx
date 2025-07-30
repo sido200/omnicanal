@@ -3,7 +3,7 @@ import "./ServiceSection.css";
 import image from "../../assets/home.jpg";
 import { FaRegEdit } from "react-icons/fa";
 import { LuPenTool } from "react-icons/lu";
-import { FiAward, FiBook } from "react-icons/fi";
+import { FiAward, FiBook, FiPackage, FiPrinter } from "react-icons/fi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -11,61 +11,91 @@ import "swiper/css/pagination";
 import { FreeMode, Autoplay } from "swiper/modules";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { HiOutlineSpeakerphone } from "react-icons/hi";
+import { MdEvent } from "react-icons/md";
 
 const serviceItems = [
   {
+    icon: <FiAward />,
+    title: "Digital Marketing",
+    desc: "Gagnez en notoriété, générer des leads et devenez un carrefour du 2.0 grâce à des stratégie 100% adaptées",
+  },
+  {
     icon: <FaRegEdit />,
-    title: "UX/UI Design",
-    desc: "Attract more users and grow your business fast with us. Contact us today to get more details",
+    title: "Consulting Marketing",
+    desc: "Plus de 20 ans d'expertise dans au service de votre marque et ses ambitions",
   },
   {
     icon: <LuPenTool />,
-    title: "Logo & Branding",
-    desc: "Attract more users and grow your business fast with us. Contact us today to get more details",
+    title: " Branding",
+    desc: "Votre marque n'est pas seulement un logo. Donnez lui une âme et une véritable identité grâce à nos service de branding",
   },
   {
-    icon: <FiAward />,
-    title: "Digital Marketing",
-    desc: "Attract more users and grow your business fast with us. Contact us today to get more details",
+    icon: <FiPackage />,
+    title: "Création de packaging",
+    desc: "Du primaire au secondaire, marquez les esprit et donner le coup de foudre à vos clients au premier regard",
+  },
+];
+const serviceItems2 = [
+  {
+    icon: <HiOutlineSpeakerphone  />,
+    title: "Création audiovisuelle",
+    desc: "Faites de vos films d'entreprise une œuvre inoubliable et de vos reels et photos RS un contenu viral",
   },
   {
-    icon: <FiBook />,
-    title: "Pitchdecks",
-    desc: "Attract more users and grow your business fast with us. Contact us today to get more details",
+    icon: <MdEvent  />,
+    title: "Organisation d'événements",
+    desc: "Brillez de milles feux et faites de vos événements l'occasion à ne pas rater",
   },
+  {
+    icon: <FiPrinter  />,
+    title: " Impression Numérique",
+    desc: "Notre Atelier d'impression vous garantie une qualité irréprochable pour toute impression papier",
+  },
+  {
+    icon: <FiPrinter  />,
+    title: " Impression Numérique",
+    desc: "Notre Atelier d'impression vous garantie une qualité irréprochable pour toute impression papier",
+  },
+ 
 ];
 
 const ServiceSection = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
 
+  // Ajout de l'état pour l'index du slide actif
+  const [activeIndex, setActiveIndex] = React.useState(0);
+
   React.useEffect(() => {
     if (inView) controls.start("visible");
   }, [inView, controls]);
 
+  // Choix de la liste selon le slide actif
+  const currentItems = activeIndex === 0 ? serviceItems : serviceItems2;
+
   return (
     <section className="service_section" ref={ref}>
-   <h2>
-  A Range of{" "}
-  <motion.span
-    className="typewriter"
-    initial={{ x: 50, opacity: 0 }}
-    animate={inView ? { x: 0, opacity: 1 } : {}}
-    transition={{ duration: 0.6, delay: 0.3 }}
-  >
-    services
-  </motion.span>{" "}
-  to elevate your{" "}
-  <motion.span
-    className="typewriter"
-    initial={{ x: 50, opacity: 0 }}
-    animate={inView ? { x: 0, opacity: 1 } : {}}
-    transition={{ duration: 0.6, delay: 0.8 }}
-  >
-    project
-  </motion.span>
-</h2>
-
+      <h2>
+        Donnez une{" "}
+        <motion.span
+          className="typewriter"
+          initial={{ x: 50, opacity: 0 }}
+          animate={inView ? { x: 0, opacity: 1 } : {}}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          nouvelle
+        </motion.span>{" "}
+        dimension à vos{" "}
+        <motion.span
+          className="typewriter"
+          initial={{ x: 50, opacity: 0 }}
+          animate={inView ? { x: 0, opacity: 1 } : {}}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
+          projets
+        </motion.span>
+      </h2>
 
       <div className="service_content">
         <motion.div
@@ -84,15 +114,20 @@ const ServiceSection = () => {
             }}
             modules={[FreeMode, Autoplay]}
             className="mySwiper"
+            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           >
-            <SwiperSlide><img src={image} alt="" /></SwiperSlide>
-            <SwiperSlide><img src={image} alt="" /></SwiperSlide>
+            <SwiperSlide>
+              <img src={image} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image} alt="" />
+            </SwiperSlide>
           </Swiper>
         </motion.div>
 
         <div className="right_service">
           <ul>
-            {serviceItems.map((item, index) => (
+            {currentItems.map((item, index) => (
               <motion.li
                 key={index}
                 initial={{ x: 100, opacity: 0 }}
