@@ -79,7 +79,7 @@ const ServicePage = () => {
   ];
   const serviceData = [
     {
-      title: "Stratégie marketing",
+      title: "Marketing Digital",
       description: "Passez la vitesse 2.0 avec Omnicanal.",
       desc: "Passez la vitesse 2.0 avec Omnicanal. Nos experts du digital ont l'expertise et le talent pour tailler des stratégies de contenu sur mesure pour votre entreprise, en effet notre travail se fait sur tous les supports digitaux incluant les réseaux sociaux Meta (Facebook, Instagram, WhatsApp), Linkedin, Tiktok, Snapchat, les supports web comme sites, blog, référencement organique (SEO), référencement payant (SEM), Google advertising incluant YouTube, et nous vous aidons à atteindre des objectifs qui vont au delà de seulement la notoriété et touchent des points plus pertinent comme la génération de lead, la fidélisation client, génération de bases de données et l'amélioration de votre image de marque",
       image: [omni2,omni10, omni11, omni12],

@@ -95,36 +95,48 @@ export default function Footer() {
         <div className="right-footer">
           <ul>
             <li className="title-liste">Explore</li>
-            <Link href="/#hero-section">
-              <li>{"home"}</li>
+            <Link to="/">
+              <li>{"Home"}</li>
             </Link>
-            <Link href="/#about-section">
-              <li>{"about"}</li>
+            <Link to="/portfolio">
+              <li>{"Portfolio"}</li>
             </Link>
-            <Link href={`/Product`}>
-              <li>{"products"}</li>
+            <Link to={`/service`}>
+              <li>{"Services"}</li>
             </Link>
-            <Link href={`/Contact`}>
+            <Link to={`/Blog`}>
+              <li>{"Blog"}</li>
+            </Link>
+            <Link to={`/contact`}>
               <li>{"contact"}</li>
             </Link>
           </ul>
+
           <ul>
             <li className="title-liste">Contact</li>
             <li>+213 28 17 67 96</li>
             <li>Info@omnicanal-dz.com</li>
-           <a href="https://maps.app.goo.gl/Zhd2uYinLyzjLzFf7" target="_blank"> <li>Maps</li></a>
+            <a href="https://maps.app.goo.gl/Zhd2uYinLyzjLzFf7" target="_blank">
+              {" "}
+              <li>Maps</li>
+            </a>
           </ul>
         </div>
       </div>
       <div className="bottom-footer">
         <div className="social">
-          <a href="https://www.instagram.com/omnicanal_agency?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== " target="_blank">
+          <a
+            href="https://www.instagram.com/omnicanal_agency?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== "
+            target="_blank"
+          >
             <FiInstagram color="white" size={32} />
           </a>
-          <a href="https://www.linkedin.com/company/omnicanal-creative-agency/" target="_blank">
+          <a
+            href="https://www.linkedin.com/company/omnicanal-creative-agency/"
+            target="_blank"
+          >
             <FiLinkedin color="white" size={32} />
           </a>
-        
         </div>
         <p>© 2025 Omnicall all right reserved</p>
       </div>

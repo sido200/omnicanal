@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: flex-start;
   padding: 4% 0px;
-
+z-index: 3;
+position: relative;
   gap: 25px;
 }
 .home_section_card {
@@ -44,7 +45,7 @@
   margin-top: 20px;
 }
 .button button:first-child {
-  background-color: black;
+  background-color:  rgba(123, 0, 255, 1);
   color: white;
   font-size: 22px;
   font-weight: 500;
@@ -52,30 +53,31 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  border: 2px solid black;
+  border: 2px solid  rgba(123, 0, 255, 1);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .button button:first-child:hover {
-  background-color: rgba(123, 0, 255, 1);
-  color: white;
+ background-color: white;
+  color:  rgba(123, 0, 255, 1);
   font-size: 22px;
   font-weight: 500;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  border: 2px solid rgba(123, 0, 255, 1);
+  border: 2px solid  rgba(123, 0, 255, 1);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .button button:last-child {
   background-color: white;
-  color: black;
+  color:  rgba(123, 0, 255, 1);
   font-size: 22px;
   font-weight: 500;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  border: 2px solid black;
+  border: 2px solid  rgba(123, 0, 255, 1);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .button button:last-child:hover {

@@ -7,6 +7,9 @@ import {
   FaCogs,
   FaEnvelope,
 } from "react-icons/fa";
+import { FaRegSquare } from "react-icons/fa6";
+import { FaRegCircle } from "react-icons/fa";
+import { FaXmark } from "react-icons/fa6";
 
 import LandingSection from "../../components/LandingSection/LandingSection";
 import Partener from "../../components/Partener/Partener";
@@ -146,14 +149,18 @@ export default function Home() {
 
             {/* LAST ICON */}
             <ArcherElement id="icon5">
-              <div className="icon-wrapper" style={{ top: 4120, left: "50%",right: "50%", transform: "translate(-50%, -50%)" }}>
+              <div className="icon-wrapper env" style={{ top: 4500, left: "50%",right: "50%", transform: "translate(-50%, -50%)" }}>
                 <FaEnvelope />
               </div>
             </ArcherElement>
 
-            {/* FINAL CIRCLE REVEAL */}
+     {/* FINAL CIRCLE REVEAL */}
             {showFinalCircle && (
      <>
+     <div className="circle">
+
+
+     </div>
               <div className="circle-icons1">
                 <div className="circle-item item1" >
                   <FaLightbulb />
@@ -174,6 +181,8 @@ export default function Home() {
               </div>
               </>
             )}
+
+         
           </div>
         </ArcherContainer>
       </div>
@@ -183,7 +192,20 @@ export default function Home() {
       <Partener />
       <ServiceSection />
       <Functionality />
+           <section className="final-circle" style={{height: showFinalCircle ? "600px" : "0px"}}>
+     <div className="symbole">
+      <FaRegSquare className="square" />
+      <FaRegCircle  />
+      <FaXmark className="cross" />
+    </div>
+     <div className="symbole">
+      <FaRegSquare className="square" />
+      <FaRegCircle  />
+      <FaXmark className="cross" />
+    </div>
+</section>
       <ContactSection />
+ 
     </main>
   );
 }

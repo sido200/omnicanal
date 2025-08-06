@@ -13,7 +13,13 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { MdEvent } from "react-icons/md";
-
+import image1 from "../../assets/6 (PSD).jpeg"
+import image2 from "../../assets/7 (PSD).jpeg"
+import image3 from "../../assets/8 (PSD).jpeg"
+import image4 from "../../assets/9 (PSD).jpeg"
+import image5 from "../../assets/10 (PSD).jpeg"
+import image6 from "../../assets/11.png"
+import image7 from "../../assets/12.jpg"
 const serviceItems = [
   {
     icon: <FiAward />,
@@ -117,11 +123,28 @@ const ServiceSection = () => {
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           >
             <SwiperSlide>
-              <img src={image} alt="" />
+              <img src={image1} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={image} alt="" />
+              <img src={image2} alt="" />
             </SwiperSlide>
+            <SwiperSlide>
+              <img src={image3} alt="" />
+                </SwiperSlide>
+            <SwiperSlide>
+              <img src={image4} alt="" />
+                </SwiperSlide>
+            <SwiperSlide>
+              <img src={image5} alt="" />
+                </SwiperSlide>
+            <SwiperSlide>
+              <img src={image6} alt="" />
+                </SwiperSlide>
+            <SwiperSlide>
+              <img src={image7} alt="" />
+                </SwiperSlide>
+        
+         
           </Swiper>
         </motion.div>
 

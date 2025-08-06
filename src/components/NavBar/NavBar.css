@@ -66,7 +66,7 @@
     background-color: white;
     width: 100dvw;
     height: 100dvh;
-    z-index: 1;
+    z-index: 10;
     align-items: center;
     justify-content: center;
     clip-path: inset(0 0 0 100%);

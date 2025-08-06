@@ -9,11 +9,20 @@
   height: 5000px;
   z-index: 1;
 }
+.final-circle{
+  height: 0px;
 
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  transition: all 1.5s ease;
+
+}
 .icon-wrapper {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 70px !important;
+  height: 70px !important;
   background: white;
   border: 2px solid rgba(123, 0, 255, 1);
   border-radius: 50%;
@@ -37,26 +46,75 @@
 
 .circle-icons1 {
   position: absolute;
-  top: 4120px;
+  top: 4500px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
+ 
+
   border-radius: 50%;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
  
-  gap: 70px;
+  gap: 400px;
 }
+.circle{
+    position: absolute;
+  top: 4500px;
+  left: 50%;
+    transform: translate(-50%, -50%);
+  height: 550px;
+  width: 550px;
+  border: 2px solid rgba(123, 0, 255, 1);
+  border-radius: 50%;
+}
+.final-circle .symbole:first-child{
+  position: absolute;
+  height: 80px;
+  width: 120px;
+ top: 15%;
+ left: 30%;
+}
+.final-circle .symbole:last-child{
+  position: absolute;
+  height: 80px;
+  width: 120px;
+ bottom: 5%;
+ right: 30%;
+}
+.symbole svg:nth-child(1){
+  position: absolute;
+  top: 0;
+  left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(40deg);
+    color: rgba(123, 0, 255, 1);
+}
+.symbole svg:nth-child(2){
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+    transform: translate(-50%, -50%);
+      transform: rotate(40deg);
+         color: rgba(123, 0, 255, 1);
+}
+.symbole svg:nth-child(3){
+  position: absolute;
+     color: rgba(123, 0, 255, 1);
+  bottom: 0;
+  right: 10%;
+    transform: translate(-50%, -50%);
+      transform: rotate(20deg);
+}
+
 .circle-icons2 {
   position: absolute;
-  top: 4120px;
+  top: 4500px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
+
+ 
   border-radius: 50%;
   position: absolute;
   display: flex;
@@ -64,25 +122,64 @@
   align-items: center;
 
   flex-direction: column;
-  gap: 70px;
+  gap: 400px;
 }
 
 .circle-item {
 
-  font-size: 24px;
+  font-size: 32px;
   background: white;
   border: 2px solid rgba(123, 0, 255, 1);
   border-radius: 50%;
   padding: 12px;
   color: rgba(123, 0, 255, 1);
   transition: transform 0.4s ease-in-out;
-    width: 60px;
-  height: 60px;
+  width: 150px !important;
+  height: 150px !important;
   display: flex;
   align-items: center;
   justify-content: center;
     animation: pop 0.6s ease-in-out forwards;
 }
+.env{
+    font-size:32px;
+  background: white;
+  border: 2px solid rgba(123, 0, 255, 1);
+  border-radius: 50%;
+  padding: 12px;
+  color: rgba(123, 0, 255, 1);
+  transition: transform 0.4s ease-in-out;
+  width: 150px !important;
+  height: 150px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    animation: pop 1.3s ease-in-out forwards;
+}
+.item1:hover,.item2:hover,.item3:hover,.item4:hover {
+
+
+  background:  rgba(123, 0, 255, 1) !important;
+  border: 2px solid rgba(123, 0, 255, 1) !important;
+
+  color:white !important;
+
+  z-index: 2;
+
+}
+.icon-wrapper:hover {
+
+
+  background:  rgba(123, 0, 255, 1) !important;
+  border: 2px solid rgba(123, 0, 255, 1) !important;
+
+  color:white !important;
+
+  z-index: 3 !important;
+
+}
+
+
 
 
 @keyframes pop {
@@ -95,10 +192,11 @@
     opacity: 1;
   }
 }
-@media (max-width: 768px) {
-  .section-list{
+@media (max-width: 1200px) {
+  .section-list ,.final-circle{
     display: none;
   }
+  
 }
 
 

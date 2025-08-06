@@ -8,45 +8,45 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import functionImage from "../../assets/function.jpg";
 import PortfolioCard from "../../components/PortfolioCard/PortfolioCard";
-import image1 from "../../assets/49-1.png"
-import image2 from "../../assets/49-2.png"
-import image3 from "../../assets/49-3.png"
-import image4 from "../../assets/49-4.png"
-import image5 from "../../assets/49-5.png"
-import image2_1 from "../../assets/50-1.png"
-import image2_2 from "../../assets/50-2.png"
-import image2_3 from "../../assets/50-3.png"
-import image2_4 from "../../assets/50-4.png"
-import image2_5 from "../../assets/50-5.png"
-import img51_1 from '../../assets/51.jpg';
-import img51_2 from '../../assets/51-2.jpg';
-import img51_3 from '../../assets/51-3.jpg';
-import img51_4 from '../../assets/51-4.jpg';
-import img51_5 from '../../assets/51-5.jpg';
-import img51_6 from '../../assets/51-6.jpg';
-import img51_6webp from '../../assets/51-6.webp';
-import img51_7 from '../../assets/51-7.jpg';
-import img51_8webp from '../../assets/51-8.webp';
-import img51_9 from '../../assets/51-9.jpg';
-import img51_10 from '../../assets/51-10.jpg';
-import img51_11 from '../../assets/51-11.jpg';
-import img51_12webp from '../../assets/51-12.webp';
-import img51_13 from '../../assets/51-13.jpg';
-import img51_15 from '../../assets/51-15.jpg';
-import vod51 from "../../assets/51-14.mp4"
-import img52_1 from "../../assets/52-1.jpg"
-import img52_2 from "../../assets/52-2.png"
-import vod53 from "../../assets/53.mp4"
-import img54_1 from "../../assets/54.png"
-import img54_2 from "../../assets/54-2.png"
-import img61_1 from '../../assets/61.jpg';
-import img61_2 from '../../assets/61-2.jpg';
-import img61_3 from '../../assets/61-3.jpg';
-import img61_4 from '../../assets/61-4.jpg';
-import img61_5 from '../../assets/61-5.jpg';
-import img61_6 from '../../assets/61-6.jpg';
+import image1 from "../../assets/49-1.png";
+import image2 from "../../assets/49-2.png";
+import image3 from "../../assets/49-3.png";
+import image4 from "../../assets/49-4.png";
+import image5 from "../../assets/49-5.png";
+import image2_1 from "../../assets/50-1.png";
+import image2_2 from "../../assets/50-2.png";
+import image2_3 from "../../assets/50-3.png";
+import image2_4 from "../../assets/50-4.png";
+import image2_5 from "../../assets/50-5.png";
+import img51_1 from "../../assets/51.jpg";
+import img51_2 from "../../assets/51-2.jpg";
+import img51_3 from "../../assets/51-3.jpg";
+import img51_4 from "../../assets/51-4.jpg";
+import img51_5 from "../../assets/51-5.jpg";
+import img51_6 from "../../assets/51-6.jpg";
+import img51_6webp from "../../assets/51-6.webp";
+import img51_7 from "../../assets/51-7.jpg";
+import img51_8webp from "../../assets/51-8.webp";
+import img51_9 from "../../assets/51-9.jpg";
+import img51_10 from "../../assets/51-10.jpg";
+import img51_11 from "../../assets/51-11.jpg";
+import img51_12webp from "../../assets/51-12.webp";
+import img51_13 from "../../assets/51-13.jpg";
+import img51_15 from "../../assets/51-15.jpg";
+import vod51 from "../../assets/51-14.mp4";
+import img52_1 from "../../assets/52-1.jpg";
+import img52_2 from "../../assets/52-2.png";
+import vod53 from "../../assets/53.mp4";
+import img54_1 from "../../assets/54.png";
+import img54_2 from "../../assets/54-2.png";
+import img61_1 from "../../assets/61.jpg";
+import img61_2 from "../../assets/61-2.jpg";
+import img61_3 from "../../assets/61-3.jpg";
+import img61_4 from "../../assets/61-4.jpg";
+import img61_5 from "../../assets/61-5.jpg";
+import img61_6 from "../../assets/61-6.jpg";
+import image from "../../assets/image.png";
 const style = {
   position: "absolute",
   top: "50%",
@@ -99,25 +99,42 @@ const Portfolio = () => {
     {
       title: "Social Media",
       description: "Social Media",
-      images: [img51_1, img51_2, img51_3, img51_4, img51_5, img51_6, img51_6webp, img51_7, img51_8webp, img51_9, img51_10, img51_11, img51_12webp, img51_13,vod51, img51_15],
+      images: [
+        img51_1,
+        img51_2,
+        img51_3,
+        img51_4,
+        img51_5,
+        img51_6,
+        img51_6webp,
+        img51_7,
+        img51_8webp,
+        img51_9,
+        img51_10,
+        img51_11,
+        img51_12webp,
+        img51_13,
+        vod51,
+        img51_15,
+      ],
       category: "Communication",
     },
     {
       title: "Habillage Building Merinal",
       description: "Merinal",
-      images: [img52_1,img52_2],
+      images: [img52_1, img52_2],
       category: "Business",
     },
     {
       title: "Vidéo unité de production Merinal",
       description: "Merinal",
-      images: [image2_1, vod53],
+      images: [image, vod53],
       category: "Communication",
     },
     {
       title: "Packaging Progynelle",
       description: " Progynelle",
-      images: [img54_1,img54_2],
+      images: [img54_1, img54_2],
       category: "Business",
     },
     {
@@ -136,62 +153,64 @@ const Portfolio = () => {
 
   return (
     <main className="service_page">
-    <Modal
-  open={open}
-  onClose={handleClose}
-  aria-labelledby="modal-modal-title"
-  aria-describedby="modal-modal-description"
->
-  <Box sx={style} className="modal_service">
-    {selectedItem && (
-      <Swiper
-        navigation={true}
-        keyboard={true}
-        modules={[Navigation, Keyboard]}
-        className="mySwiper3"
-        onSlideChange={(swiper) => {
-          const activeSlide = swiper.slides[swiper.activeIndex];
-          const video = activeSlide.querySelector('video');
-          if (video) {
-            video.play();
-          }
-          // Arrêter les autres vidéos si elles existent
-          swiper.slides.forEach((slide) => {
-            const otherVideo = slide.querySelector('video');
-            if (otherVideo && otherVideo !== video) {
-              otherVideo.pause();
-              otherVideo.currentTime = 0;
-            }
-          });
-        }}
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
       >
-        {selectedItem.images.map((media, idx) => {
-          const isVideo = typeof media === "string" && (media.endsWith(".mp4") || media.endsWith(".webm") || media.endsWith(".ogg"));
-          return (
-            <SwiperSlide className="swiper-slide-custom" key={idx}>
-              {isVideo ? (
-                <video controls style={{ width: "100%" }}>
-                  <source src={media} />
-                  Your browser does not support the video tag.
-                </video>
-              ) : (
-                <img src={media} alt={`Slide ${idx + 1}`} />
-              )}
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    )}
-    <button className="button-modal-portfolio">
-      Let’s talk <FaLongArrowAltRight />
-    </button>
-  </Box>
-</Modal>
+        <Box sx={style} className="modal_service">
+          {selectedItem && (
+            <Swiper
+              navigation={true}
+              keyboard={true}
+              modules={[Navigation, Keyboard]}
+              className="mySwiper3"
+              onSlideChange={(swiper) => {
+                const activeSlide = swiper.slides[swiper.activeIndex];
+                const video = activeSlide.querySelector("video");
+                if (video) {
+                  video.play();
+                }
+                // Arrêter les autres vidéos si elles existent
+                swiper.slides.forEach((slide) => {
+                  const otherVideo = slide.querySelector("video");
+                  if (otherVideo && otherVideo !== video) {
+                    otherVideo.pause();
+                    otherVideo.currentTime = 0;
+                  }
+                });
+              }}
+            >
+              {selectedItem.images.map((media, idx) => {
+                const isVideo =
+                  typeof media === "string" &&
+                  (media.endsWith(".mp4") ||
+                    media.endsWith(".webm") ||
+                    media.endsWith(".ogg"));
+                return (
+                  <SwiperSlide className="swiper-slide-custom" key={idx}>
+                    {isVideo ? (
+                      <video style={{ width: "100%" }}>
+                        <source src={media} />
+                        Your browser does not support the video tag.
+                      </video>
+                    ) : (
+                      <img src={media} alt={`Slide ${idx + 1}`} />
+                    )}
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          )}
+          <button className="button-modal-portfolio">
+            Let’s talk <FaLongArrowAltRight />
+          </button>
+        </Box>
+      </Modal>
 
       <h1>Portfolio</h1>
-      <h3>
-        Our Work
-      </h3>
+      <h3>Our Work</h3>
 
       <ul className="filter">
         {categories.map((category) => (

@@ -21,6 +21,9 @@ export default function NavBar() {
         <NavLink to="/service" activeClassName="active">
           <li>Services</li>
         </NavLink>
+        <NavLink to="/blog" activeClassName="active">
+          <li>Blog</li>
+        </NavLink>
         <NavLink to="/contact" activeClassName="active">
           <li>Contact us</li>
         </NavLink>
