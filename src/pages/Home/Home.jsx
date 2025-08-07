@@ -149,7 +149,7 @@ export default function Home() {
 
             {/* LAST ICON */}
             <ArcherElement id="icon5">
-              <div className="icon-wrapper env" style={{ top: 4500, left: "50%",right: "50%", transform: "translate(-50%, -50%)" }}>
+              <div className="icon-wrapper env" style={{ top: 4550, left: "50%",right: "50%", transform: "translate(-50%, -50%)" }}>
                 <FaEnvelope />
               </div>
             </ArcherElement>
@@ -192,7 +192,7 @@ export default function Home() {
       <Partener />
       <ServiceSection />
       <Functionality />
-           <section className="final-circle" style={{height: showFinalCircle ? "600px" : "0px"}}>
+           <section className="final-circle" style={{height: showFinalCircle ? "700px" : "0px"}}>
      <div className="symbole">
       <FaRegSquare className="square" />
       <FaRegCircle  />

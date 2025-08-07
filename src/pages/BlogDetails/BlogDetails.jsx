@@ -4,7 +4,7 @@ import { getBlogById } from '../../services/blog';
 import LightGallery from 'lightgallery/react';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
-
+import { MdArrowForwardIos } from "react-icons/md";
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
@@ -28,6 +28,7 @@ const BlogDetails = () => {
 
   return (
     <main className="blog-details">
+       <h1>Blog  </h1>
       {imageUrls.length > 0 && (
         <div className="gallery">
           {/* Image principale */}

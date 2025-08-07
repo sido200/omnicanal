@@ -61,7 +61,7 @@
 }
 .circle{
     position: absolute;
-  top: 4500px;
+  top: 4550px;
   left: 50%;
     transform: translate(-50%, -50%);
   height: 550px;
@@ -73,14 +73,14 @@
   position: absolute;
   height: 80px;
   width: 120px;
- top: 15%;
+ top: 17%;
  left: 30%;
 }
 .final-circle .symbole:last-child{
   position: absolute;
   height: 80px;
   width: 120px;
- bottom: 5%;
+ bottom: 7%;
  right: 30%;
 }
 .symbole svg:nth-child(1){
@@ -110,7 +110,7 @@
 
 .circle-icons2 {
   position: absolute;
-  top: 4500px;
+  top: 4550px;
   left: 50%;
   transform: translate(-50%, -50%);
 
