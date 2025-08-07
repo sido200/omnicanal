@@ -23,13 +23,13 @@
   position: absolute;
   width: 70px !important;
   height: 70px !important;
-  background: white;
+  background: rgba(123, 0, 255, 1);
   border: 2px solid rgba(123, 0, 255, 1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(123, 0, 255, 1);
+  color: white;
   font-size: 24px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.6s ease;
@@ -128,11 +128,11 @@
 .circle-item {
 
   font-size: 32px;
-  background: white;
+  background:  rgba(123, 0, 255, 1);
   border: 2px solid rgba(123, 0, 255, 1);
   border-radius: 50%;
   padding: 12px;
-  color: rgba(123, 0, 255, 1);
+  color:white;
   transition: transform 0.4s ease-in-out;
   width: 150px !important;
   height: 150px !important;
@@ -143,11 +143,11 @@
 }
 .env{
     font-size:32px;
-  background: white;
+  background:  rgba(123, 0, 255, 1);
   border: 2px solid rgba(123, 0, 255, 1);
   border-radius: 50%;
   padding: 12px;
-  color: rgba(123, 0, 255, 1);
+  color: white;
   transition: transform 0.4s ease-in-out;
   width: 150px !important;
   height: 150px !important;
@@ -159,10 +159,10 @@
 .item1:hover,.item2:hover,.item3:hover,.item4:hover {
 
 
-  background:  rgba(123, 0, 255, 1) !important;
+  background:white !important;
   border: 2px solid rgba(123, 0, 255, 1) !important;
 
-  color:white !important;
+  color:  rgba(123, 0, 255, 1)  !important;
 
   z-index: 2;
 

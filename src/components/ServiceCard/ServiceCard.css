@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 10px;
   cursor: pointer;
+  align-items: center;
 }
 .service_card img {
   width: 100%;
@@ -16,6 +17,7 @@
   font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
+  text-align: center;
 }
 .service_card p {
   font-weight: 400;
