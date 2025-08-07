@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 const Question = () => {
   const [clickedQuestions, setClickedQuestions] = useState([0]);

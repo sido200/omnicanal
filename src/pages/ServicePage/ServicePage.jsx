@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import "./ServicePage.css"; // Adjust the path as necessary
 import Modal from "@mui/material/Modal";
@@ -214,3 +214,4 @@ const ServicePage = () => {
 };
 
 export default ServicePage;
+

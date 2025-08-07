@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useEffect } from 'react'
 import { getallblogs } from '../../services/blog'
 import BlogCard from '../../components/BlogCard/BlogCard'

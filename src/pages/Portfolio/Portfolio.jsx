@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./Portfolio.css";
 import Modal from "@mui/material/Modal";
 import { Box } from "@mui/material";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import { Navigation, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

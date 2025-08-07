@@ -1,6 +1,5 @@
 import React from "react";
 import "./ServiceSection.css";
-import image from "../../assets/home.jpg";
 import { FaRegEdit } from "react-icons/fa";
 import { LuPenTool } from "react-icons/lu";
 import { FiAward, FiBook, FiPackage, FiPrinter } from "react-icons/fi";

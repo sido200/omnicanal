@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./CardHome.css";
 
 const CardHome = ({ icon, text1 = "", text2, color, bg, bgI,icon2 }) => {

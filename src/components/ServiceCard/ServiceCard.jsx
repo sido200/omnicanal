@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./ServiceCard.css"; // Adjust the path as necessary
 // Adjust the path as necessary
 const ServiceCard = ({click,info}) => {
