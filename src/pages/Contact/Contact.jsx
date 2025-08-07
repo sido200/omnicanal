@@ -1,6 +1,5 @@
 import ContactForm from "../../components/ContactForm/ContactForm";
 import "./Contact.css";
-import Spline from '@splinetool/react-spline';
 import { FaPhone } from "react-icons/fa6";
 export default function Contact() {
   return (
