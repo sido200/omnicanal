@@ -13,23 +13,23 @@ export default function NavBar() {
       <ul className={"nav-links " + (openNav ? "open_nav" : "")}>
         <IoClose className="close" onClick={() => setOpenNav(false)} />
 
-        <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+        <NavLink  onClick={() => setOpenNav(false)} to="/" className={({ isActive }) => (isActive ? "active" : "")}>
           <li>Home</li>
         </NavLink>
 
-        <NavLink to="/portfolio" className={({ isActive }) => (isActive ? "active" : "")}>
+        <NavLink  onClick={() => setOpenNav(false)} to="/portfolio" className={({ isActive }) => (isActive ? "active" : "")}>
           <li>Portfolio</li>
         </NavLink>
 
-        <NavLink to="/service" className={({ isActive }) => (isActive ? "active" : "")}>
+        <NavLink  onClick={() => setOpenNav(false)} to="/service" className={({ isActive }) => (isActive ? "active" : "")}>
           <li>Services</li>
         </NavLink>
 
-        <NavLink to="/blog" className={({ isActive }) => (isActive ? "active" : "")}>
+        <NavLink  onClick={() => setOpenNav(false)} to="/blog" className={({ isActive }) => (isActive ? "active" : "")}>
           <li>Blog</li>
         </NavLink>
 
-        <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>
+        <NavLink  onClick={() => setOpenNav(false)} to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>
           <li>Contact us</li>
         </NavLink>
 
