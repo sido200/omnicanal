@@ -146,7 +146,7 @@ width: 100%;
 
 @media (max-width: 1200px) {
   .service_section {
-    padding: 3% 30px;
+    padding: 10% 30px;
   }
      .service_content {
     flex-direction: column;
@@ -158,6 +158,11 @@ width: 100%;
        .service_section .swiper {
     max-width: 640px;
     height: auto;
+    
+  }
+    .service_section h2 {
+   
+    width: 100% !important;
   }
 }
 
@@ -183,15 +188,16 @@ width: 100%;
     max-width: 350px;
     height: 100%;
   }
+      .service_section h2 {
+    font-size: 2rem;
+    width: 100% !important;
+  }
   .service_section .swiper-slide  {
    
     height: 100% !important;
 
   }
-  .service_section h2 {
-    font-size: 2rem;
-    width: 100%;
-  }
+
   .text_servi {
     flex: 1;
   }

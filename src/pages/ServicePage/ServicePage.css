@@ -157,11 +157,17 @@ letter-spacing: 0%;
   .service_page {
     padding: 3% 50px;
   }
+  .description {
+    font-size: 1rem;
+  }
   .service_page > h3 {
     width: 100%;
     font-size: 2rem;
   }
   .grid_service {
     justify-content: center;
+  }
+  .modal_service:has(.header_service){
+        padding: 40px !important;
   }
 }
