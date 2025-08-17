@@ -149,12 +149,36 @@ export default function Home() {
 
             {/* LAST ICON */}
             <ArcherElement id="icon5">
-              <div className="icon-wrapper env" style={{ top: 4550, left: "50%",right: "50%", transform: "translate(-50%, -50%)" }}>
+              <div className="icon-wrapper env" style={{ top: 4520, left: "50%",right: "50%", transform: "translate(-50%, -50%)" }}>
                 <FaEnvelope />
               </div>
             </ArcherElement>
 
-     {/* FINAL CIRCLE REVEAL */}
+   
+
+         
+          </div>
+        </ArcherContainer>
+      </div>
+
+      {/* Sections */}
+      <LandingSection />
+      <Partener />
+      <ServiceSection />
+      <Functionality />
+           <section className="final-circle" style={{height: showFinalCircle ? "800px" : "0px"}}>
+
+     <div className="symbole">
+      <FaRegSquare className="square" />
+      <FaRegCircle  />
+      <FaXmark className="cross" />
+    </div>
+     <div className="symbole">
+      <FaRegSquare className="square" />
+      <FaRegCircle  />
+      <FaXmark className="cross" />
+    </div>
+      {/* FINAL CIRCLE REVEAL */}
             {showFinalCircle && (
      <>
      <div className="circle">
@@ -175,34 +199,15 @@ export default function Home() {
                 <div className="circle-item item3" >
                   <FaTools />
                 </div>
+                     <div className="circle-item item5" >
+                <FaEnvelope />
+              </div>
                 <div className="circle-item item4" >
                   <FaCogs />
                 </div>
               </div>
               </>
             )}
-
-         
-          </div>
-        </ArcherContainer>
-      </div>
-
-      {/* Sections */}
-      <LandingSection />
-      <Partener />
-      <ServiceSection />
-      <Functionality />
-           <section className="final-circle" style={{height: showFinalCircle ? "700px" : "0px"}}>
-     <div className="symbole">
-      <FaRegSquare className="square" />
-      <FaRegCircle  />
-      <FaXmark className="cross" />
-    </div>
-     <div className="symbole">
-      <FaRegSquare className="square" />
-      <FaRegCircle  />
-      <FaXmark className="cross" />
-    </div>
 </section>
       <ContactSection />
  

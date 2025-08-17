@@ -46,7 +46,7 @@
 
 .circle-icons1 {
   position: absolute;
-  top: 4500px;
+  top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
  
@@ -61,7 +61,7 @@
 }
 .circle{
     position: absolute;
-  top: 4550px;
+  top: 400px;
   left: 50%;
     transform: translate(-50%, -50%);
   height: 550px;
@@ -76,11 +76,11 @@
  top: 17%;
  left: 30%;
 }
-.final-circle .symbole:last-child{
+.final-circle .symbole:nth-child(2){
   position: absolute;
   height: 80px;
   width: 120px;
- bottom: 7%;
+ bottom: 10%;
  right: 30%;
 }
 .symbole svg:nth-child(1){
@@ -110,7 +110,7 @@
 
 .circle-icons2 {
   position: absolute;
-  top: 4550px;
+  top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -122,7 +122,7 @@
   align-items: center;
 
   flex-direction: column;
-  gap: 400px;
+  gap: 100px;
 }
 
 .circle-item {
@@ -155,6 +155,7 @@
   align-items: center;
   justify-content: center;
     animation: pop 1.3s ease-in-out forwards;
+    opacity: 0 !important;
 }
 .item1:hover,.item2:hover,.item3:hover,.item4:hover {
 
